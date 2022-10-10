@@ -26,11 +26,15 @@ main {
     background-color: pink;
 }
 
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
 .left-column {
-    float: left;
     width: 50%;
+    background-color: aqua;
 }
 .right-column {
-    float: left;
-    width: 50%;
+    width: 40%;
+    background-color: aqua;
 }
