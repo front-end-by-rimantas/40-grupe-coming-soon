@@ -57,3 +57,34 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+.bottom-trio {
+    display: flex;
+    gap: 0 30px;
+    justify-content: center;
+}
+.bottom-trio > span {
+    position: relative;
+}
+.bottom-trio > span::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background-color: #fffb;
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translate(50%, -50%);
+}
+.bottom-trio > span:last-child::after {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .bottom-trio {
+        flex-direction: column;
+    }
+    .bottom-trio > span::after {
+        display: none;
+    }
+}
