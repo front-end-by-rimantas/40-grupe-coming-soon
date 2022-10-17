@@ -16,7 +16,7 @@
 }
 .progress-bar > .bottom > .progress {
     height: 100%;
-    width: 90%;
+    width: 100%;
     background-color: var(--primary-color);
     border-radius: inherit;
     border-top-right-radius: 0;
