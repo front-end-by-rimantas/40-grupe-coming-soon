@@ -17,8 +17,25 @@
 .progress-bar > .bottom > .progress {
     height: 100%;
     width: 100%;
-    background-color: var(--primary-color);
     border-radius: inherit;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+}
+.progress-bar .progress > .bar {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: var(--primary-color);
+    animation: loading 1s forwards;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
