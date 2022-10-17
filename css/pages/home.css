@@ -98,3 +98,10 @@ footer a:hover {
         display: none;
     }
 }
+
+.back-to-top {
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    background-color: var(--secondary-color);
+}
